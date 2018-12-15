@@ -1,4 +1,5 @@
 from sklearn.metrics import confusion_matrix, accuracy_score
+import pandas as pd
 
 def binary_confusion_matrix(y, y_hat, as_pct=False, verbose=True):
     cm = pd.DataFrame(confusion_matrix(y, y_hat),
